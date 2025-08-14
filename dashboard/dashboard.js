@@ -31,7 +31,7 @@ document.getElementById("Review").addEventListener("click", function(event) {
         alert(`You need at least 20 points for this feature. You have ${points}.`);
     }
 });
-document.getElementById("Selfstudy").addEventListener("click", function(event) {
+document.getElementById("selfstudy").addEventListener("click", function(event) {
     let points = Number(localStorage.getItem("points")) || 0;
 
     if (points < 5) {
