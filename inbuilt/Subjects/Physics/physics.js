@@ -130,7 +130,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 backBtn.addEventListener("click", () => {
-  window.location.href = "dashboard.html";  // back to homepage(profile)
+  window.location.href = "../../../dashboard/dashboard.html";  // back to homepage(profile)
 });
 
 loadQuestions();

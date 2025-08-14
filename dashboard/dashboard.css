@@ -19,56 +19,38 @@ body {
     overflow-x: hidden;
 }
 
-/* Nav bar */
-.topbar {   
-    margin: 0 auto;          
-    padding: 0px 40px;   
-    background: #FFF5F2		;
-    color: #111;            
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    opacity: 0.97;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
+/* Topbar */
+    .topbar{
+      background: rgba(255,255,255,0.98);
+      display:flex;
+      gap:20px;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 28px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      position:sticky;
+      top:0;
+      z-index:40;
+    }
+    .logo { display:flex; gap:12px; align-items:center; flex-shrink:0; }
+    .logo img{ height:42px; width:42px; border-radius:10px; object-fit:cover; display:block; }
+    .nav { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    .nav a { color:var(--text); text-decoration:none; font-weight:600; padding:6px 8px; border-radius:6px; display:inline-block; }
+    .nav a.active { color:var(--primary); background: rgba(75,74,161,0.06); }
 
+     .primary-btn {
+      display:inline-flex; gap:8px; align-items:center;
+      background: #3d3a86;
+      color:rgb(255, 255, 255); padding:12px 16px; border-radius:10px; font-weight:700; border:none; cursor:pointer;
+      box-shadow: 0 10px 24px rgba(75,74,161,0.06); font-size:15px;
+      text-decoration: none;
+    }
+    .primary-btn:hover { transform: translateY(-3px); }
 
-/* Nav links */
-.nav-links {
-    display: flex;
-    gap: 40px;
-}
+    .btn-ghost { background:transparent; border:1px solid rgba(75,74,161,0.08); padding:8px 10px; border-radius:8px; color:var(--primary); font-weight:600; cursor:pointer; }
+    .btn-ghost:hover { background: rgba(75,74,161,0.06); }
 
-.nav-links a {
-    color: #1a1a1a;             
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #898AC4; /* muted violet-blue on hover */
-}
-
-/* Profile button */
-.topbar-right {
-    color: rgb(0, 0, 0);
-}
-
-.profile {
-    cursor: pointer;
-}
-
-/* Logo */
-.topbar-left img {
-    height: 60px;
-    margin-right: 12px;
-    border-radius: 70%;  
-    object-fit: cover;   
-}
+    
 
 /* Main content grid */
 .main-content {

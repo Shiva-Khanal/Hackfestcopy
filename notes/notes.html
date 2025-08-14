@@ -163,6 +163,7 @@
       background: linear-gradient(180deg,var(--primary),var(--primary-strong));
       color:white; padding:12px 16px; border-radius:10px; font-weight:700; border:none; cursor:pointer;
       box-shadow: 0 10px 24px rgba(75,74,161,0.06); font-size:15px;
+      text-decoration: none;
     }
     .primary-btn:hover { transform: translateY(-3px); }
 
@@ -217,16 +218,16 @@
     </div>
 
     <nav class="nav" role="navigation" aria-label="main">
-      <a href="../index.html">Home</a>
+      <a href="../dashboard/dashboard.html">Home</a>
       <a href="../inbuilt/inbuilt.html">Inbuilt</a>
-      <a href="../self_test/selftest.html">Self Test</a>
+      <a href="../selftest/selftest.html">Self Test</a>
       <a href="../notes/notes.html" class="active">Notes</a>
       <a href="../review/review.html">Review</a>
-      <a href="../contact/contact.html">Contact</a>
+      <!-- <a href="../contact/contact.html">Contact</a> -->
     </nav>
 
     <div>
-      <button class="primary-btn" aria-label="Create new note" id="quickNewBtn">+ New Note</button>
+      <a  href="../profile/profile.html" class="primary-btn" aria-label="profile" id="quickNewBtn"  >Profile</a>
     </div>
   </header>
 
